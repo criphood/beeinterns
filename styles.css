@@ -420,6 +420,7 @@ details > summary:first-of-type {
 	transform: rotate(180deg);
 }
 
+
 .accordion_body a:first-child {
 	margin-top: 20px;
 }
@@ -472,6 +473,10 @@ details > summary:first-of-type {
 	background: url("./images/hover/data.png") no-repeat;
 }
 
+.accordion_body a:link, .accordion_body a:visited {
+	border-left: 3px solid rgba(166, 175, 243, 0.04);;
+}
+
 .accordion_body a:active, .accordion_body a:hover {
 	border-left: 3px solid #6F6EFF;
 	background-color: rgba(200, 204, 230, 0.04);
@@ -489,22 +494,33 @@ details > summary:first-of-type {
 .asideBottom > div {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+
+.bottomCircle {
+	width: 16px;
+	height: 16px;
+	border-radius: 16px;
+	background-color: #6F6EFF;
 }
 
 .button {
-	position: relative;
+	width: 42px;
+	height: 22px;
+	border: 1px solid rgba(255, 255, 255, .2);
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
 }
 
-img.BottomCircle {
-	position: absolute;
-	right: 0;
-	top: -5px;
+.moveBack {
+	transform: translateX(2px);
+	transition: 0.3s all;
 }
 
-img.circle {
-	position: absolute;
-	right: 0;
-	top: -5px;
+.moveButton {
+	transform: translateX(22px);
+	transition: 0.3s all;
 }
 
 

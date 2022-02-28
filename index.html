@@ -69,11 +69,20 @@
 					<div>
 						<div>Получать рассылку</div>
 						<div class="button">
-							<img class="circle" src="./images/Bottom.png">
-							<img class="BottomCircle" src="./images/BottomCircle.png">
+								<div class="bottomCircle moveBack"></div>
 						</div>
 					</div>
 				</div>
+				<script>
+					let button = document.querySelector('.button');
+					let bottomCircle = document.querySelector('.bottomCircle');
+
+					button.addEventListener('click', func1);
+
+					function func1() {
+						bottomCircle.classList.toggle('moveButton');
+					}
+				</script>
 			</aside>
 
 			<div class="wrapper">
