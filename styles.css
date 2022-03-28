@@ -4,7 +4,7 @@ body {
   background: #2B2C3A;
   font-family: Jost;
   width: 1440px;
-  height: 810px;
+  height: 100%;
   margin: auto; }
 
 .wrapper {
@@ -258,7 +258,7 @@ aside {
   width: 280px;
   height: 100%;
   position: fixed;
-  background: rgba(166, 175, 243, 0.04);
+  background: #303142;
   z-index: 3; }
   aside .navHead {
     height: 70px;
@@ -284,7 +284,10 @@ aside {
 /*Меню навигации*/
 nav {
   padding-top: 30px;
-  border-bottom: 1.5px solid rgba(216, 216, 216, 0.1); }
+  height: calc(100% - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
   nav ul li {
     margin-bottom: 20px; }
   nav a, nav .accordion_title {
@@ -294,7 +297,8 @@ nav {
     padding: 0px 30px; }
 
 .accordion {
-  overflow: hidden; }
+  overflow: hidden;
+  border-bottom: 1.5px solid rgba(216, 216, 216, 0.1); }
   .accordion .accordion_item .accordion_title:first-of-type {
     list-style: none; }
   .accordion .accordion_item[open] .accordion_title::after {
@@ -332,8 +336,6 @@ nav {
         fill: #6F6EFF; }
 
 .asideBottom {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   padding: 30px; }
   .asideBottom > div {
